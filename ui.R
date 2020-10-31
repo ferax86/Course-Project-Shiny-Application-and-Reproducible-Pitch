@@ -1,6 +1,6 @@
 library(shiny)
 shinyUI(fluidPage(
-  titlePanel(title=h4("Anlysis Iis dataset",align="center")),
+  titlePanel(title=h4("Analysis Iris dataset",align="center")),
   sidebarLayout(
 
   sidebarPanel(
