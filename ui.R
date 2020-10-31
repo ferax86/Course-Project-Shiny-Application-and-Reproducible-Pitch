@@ -1,5 +1,3 @@
-
-
 library(shiny)
 shinyUI(fluidPage(
   titlePanel(title=h4("Anlysis Iis dataset",align="center")),
@@ -17,10 +15,12 @@ shinyUI(fluidPage(
   
   mainPanel(
     tabsetPanel(type="tab",
+                tabPanel("Documentation", br(), htmlOutput("docum")),
                 tabPanel("Summary",verbatimTextOutput("sum")),
                 tabPanel("Structure",verbatimTextOutput("str")),
                 tabPanel("Data",tableOutput("data")),
                 tabPanel("Plot",plotOutput("myhist"))
+                
                 )   
         
   )
@@ -28,8 +28,3 @@ shinyUI(fluidPage(
 )  
 )
   
-  
-  
-  
-    ?iris
-    
